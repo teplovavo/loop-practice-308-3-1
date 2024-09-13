@@ -18,11 +18,27 @@ for (let b = 1; b <= 100; b++) {
 
 for (let c = 1; c <= 100; c++) {
     if (c % 5 === 0) {
-        console.log("Buzz");
+       // console.log("Buzz");
     } else {
-        console.log(c);
+       // console.log(c);
     }
 }
 
 
 //If a number is divisible by both 3 and 5, log “Fizz Buzz.”
+for (let d = 1; d <= 100; d++) {
+    if (d % 3 === 0 && d % 5 === 0) {
+       // console.log("Fizz Buzz");
+    } else {
+       // console.log(d);
+    }
+}
+
+// If a number is not divisible by either 3 or 5, log the number.
+for (let e = 1; e <= 100; e++) {
+    if (e % 3 !== 0 && e % 5 !== 0) {
+        console.log(e);
+    } else {
+        console.log("zzz")
+    }
+}
