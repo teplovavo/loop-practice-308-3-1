@@ -1,3 +1,4 @@
+//------------------------------------------------PART 1------------------------------------
 //Loop through all numbers from 1 to 100.
 for (let a = 1; a <= 100; a++) {
    // console.log (a);
@@ -37,8 +38,41 @@ for (let d = 1; d <= 100; d++) {
 // If a number is not divisible by either 3 or 5, log the number.
 for (let e = 1; e <= 100; e++) {
     if (e % 3 !== 0 && e % 5 !== 0) {
-        console.log(e);
+      //  console.log(e);
     } else {
-        console.log("zzz")
+      //  console.log("zzz")
     }
 }
+
+//------------------------------------------------PART 2------------------------------------
+
+let n = 0; 
+let numberofPrimestofind = 10; 
+let primesFound = 0; 
+
+while (primesFound < numberofPrimestofind) {
+  let prime = true;
+
+  if (n <= 1) {
+    prime = false;
+  } else {
+    for (let f = 2; f < n; f++) { // check numbers less then n
+      if (n % f === 0) { 
+        prime = false;
+        break;
+        
+      }
+    }
+  }
+
+  if (prime) {
+    console.log(n,"prime"); 
+    primesFound++; 
+
+  }
+
+  n++; 
+}
+
+
+//------------------------------------------------PART 3------------------------------------
